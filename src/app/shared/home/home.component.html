@@ -1,1 +1,10 @@
-<p>home works!</p>
+<a routerLink="/account" [queryParams]="{ login: 'admin', password: '123456' }">
+  Account true
+</a>
+
+<hr />
+
+<a routerLink="/account" [queryParams]="{ login: 'admin', password: '1234' }">
+  Account false
+</a>
+<h1>Home</h1>

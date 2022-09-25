@@ -19,7 +19,13 @@ export class CanActiveGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    if (1 < 2) return true
+    console.log(route)
+    console.log(state)
+    if (
+      route.queryParams['login'] === 'admin' &&
+      route.queryParams['password'] === '123456'
+    )
+      return true
     return false
   }
 }
