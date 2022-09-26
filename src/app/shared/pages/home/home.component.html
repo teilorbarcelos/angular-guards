@@ -10,13 +10,16 @@
 
 <hr />
 
-<a routerLink="/core">
+<a routerLink="/core" [queryParams]="{ login: 'admin', password: '123456' }">
   Dashboard
 </a>
 
 <hr />
 
-<a routerLink="/core/leads">
+<a
+  routerLink="/core/leads"
+  [queryParams]="{ login: 'admin', password: '123456' }"
+>
   Leads
 </a>
 <h1>Home</h1>
